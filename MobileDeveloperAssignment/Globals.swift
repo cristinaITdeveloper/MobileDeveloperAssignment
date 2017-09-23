@@ -12,7 +12,7 @@ class Globals: NSObject, URLSessionDelegate {
     
     let baseUrl = "https://demomobile.docebosaas.com/learn/v1/catalog"
     
-    static let sharedGlobals = Globals()
+    static let shared = Globals()
     
     var sharedSession : URLSession!
     
@@ -27,17 +27,24 @@ class Globals: NSObject, URLSessionDelegate {
     func getItemsUrl(itemName: String?, courseType: String? ) -> URL?{
         var urlString = baseUrl
         
-        if itemName != nil && courseType != nil{
+        if itemName != nil && courseType != nil && itemName! != "" && courseType! != ""{
             urlString = "\(urlString)?item_name=\(itemName!)&course_type=\(courseType!)"
         }
-        else if itemName != nil {
+        else if itemName != nil && itemName! != "" {
             urlString = "\(urlString)?item_name=\(itemName!)"
         }
-        else if courseType != nil {
+        else if courseType != nil && courseType! != "" {
             urlString = "\(urlString)?course_type=\(courseType!)"
         }
         
-        return URL(string: urlString)
+        
+        if let escapedUrlString = urlString.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) {
+            print("URL String escaped \(escapedUrlString)")
+            
+            return URL(string: escapedUrlString)
+        }
+        return nil
+        
     }
 }
 

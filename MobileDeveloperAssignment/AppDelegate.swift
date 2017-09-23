@@ -21,6 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.black
+        
+        UINavigationBar.appearance().isTranslucent = false
+        
         let searchViewController : SearchViewController = SearchViewController()
         rootNavigationController = UINavigationController(rootViewController: searchViewController)
         window?.rootViewController = rootNavigationController
