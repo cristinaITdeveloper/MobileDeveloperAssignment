@@ -12,10 +12,20 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    var rootNavigationController : UINavigationController!
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.backgroundColor = UIColor.black
+        let searchViewController : SearchViewController = SearchViewController()
+        rootNavigationController = UINavigationController(rootViewController: searchViewController)
+        window?.rootViewController = rootNavigationController
+        window?.makeKeyAndVisible()
+        
         return true
     }
 
