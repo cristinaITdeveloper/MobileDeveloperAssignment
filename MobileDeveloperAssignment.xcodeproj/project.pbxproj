@@ -99,22 +99,14 @@
 		6B8CBECC1F768F58002E629F /* MobileDeveloperAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				6B8CBF0A1F77C371002E629F /* Utilities */,
+				6B8CBF091F77C346002E629F /* ViewControllers */,
 				6B8CBF001F76A296002E629F /* CustomView */,
-				6B8CBEF71F76983B002E629F /* Model */,
+				6B8CBEF71F76983B002E629F /* Models */,
 				6B8CBECD1F768F58002E629F /* AppDelegate.swift */,
-				6B8CBEF11F7690F0002E629F /* ConnectionManager.swift */,
-				6B8CBEF31F769158002E629F /* Reachability.swift */,
-				6B8CBEF51F769188002E629F /* Globals.swift */,
-				6B8CBEFA1F76A0E2002E629F /* Utility.swift */,
 				6B8CBED41F768F58002E629F /* Assets.xcassets */,
 				6B8CBED61F768F58002E629F /* LaunchScreen.storyboard */,
 				6B8CBED91F768F58002E629F /* Info.plist */,
-				6B8CBEED1F768FC4002E629F /* SearchViewController.swift */,
-				6B8CBEEE1F768FC4002E629F /* SearchViewController.xib */,
-				6B8CBEFC1F76A216002E629F /* ItemsViewController.swift */,
-				6B8CBEFD1F76A216002E629F /* ItemsViewController.xib */,
-				6B8CBF051F779C0D002E629F /* SelectFilterViewController.swift */,
-				6B8CBF061F779C0D002E629F /* SelectFilterViewController.xib */,
 			);
 			path = MobileDeveloperAssignment;
 			sourceTree = "<group>";
@@ -128,12 +120,12 @@
 			path = MobileDeveloperAssignmentTests;
 			sourceTree = "<group>";
 		};
-		6B8CBEF71F76983B002E629F /* Model */ = {
+		6B8CBEF71F76983B002E629F /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				6B8CBEF81F769853002E629F /* Item.swift */,
 			);
-			name = Model;
+			name = Models;
 			sourceTree = "<group>";
 		};
 		6B8CBF001F76A296002E629F /* CustomView */ = {
@@ -143,6 +135,30 @@
 				6B8CBF021F76A2BA002E629F /* ItemTableViewCell.xib */,
 			);
 			name = CustomView;
+			sourceTree = "<group>";
+		};
+		6B8CBF091F77C346002E629F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6B8CBEED1F768FC4002E629F /* SearchViewController.swift */,
+				6B8CBEEE1F768FC4002E629F /* SearchViewController.xib */,
+				6B8CBEFC1F76A216002E629F /* ItemsViewController.swift */,
+				6B8CBEFD1F76A216002E629F /* ItemsViewController.xib */,
+				6B8CBF051F779C0D002E629F /* SelectFilterViewController.swift */,
+				6B8CBF061F779C0D002E629F /* SelectFilterViewController.xib */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6B8CBF0A1F77C371002E629F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6B8CBEF11F7690F0002E629F /* ConnectionManager.swift */,
+				6B8CBEF31F769158002E629F /* Reachability.swift */,
+				6B8CBEF51F769188002E629F /* Globals.swift */,
+				6B8CBEFA1F76A0E2002E629F /* Utility.swift */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
