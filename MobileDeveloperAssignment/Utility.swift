@@ -9,6 +9,7 @@
 import UIKit
 
 let ITEM_CELL_IDENTIFIER : String = "itemCell"
+let FILTER_CELL_IDENTIFIER : String = "filterCell"
 
 
 func showAlert(inViewController: UIViewController, title: String, message: String, buttonCancelText: String?, buttonOKText: String?, actionOK: Selector?, actionCancel : Selector? ) {
@@ -62,4 +63,9 @@ extension String {
     var html2String: String {
         return html2AttributedString?.string ?? ""
     }
+}
+
+protocol FilterDelegate {
+    func didClearAllFilter()
+    func didSelectFilters(_ indexPaths : [IndexPath])
 }

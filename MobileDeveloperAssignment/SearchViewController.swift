@@ -32,18 +32,34 @@ class SearchViewController: UIViewController, UITextFieldDelegate{
         return true
     }
     
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        if textField == itemNameTextField {
-            courseTypeTextField.becomeFirstResponder()
-        }
-    }
     
     @IBAction func didTapOnSearchButton() {
+        
+        if itemNameTextField.isFirstResponder {
+            itemNameTextField.resignFirstResponder()
+        }
+        if courseTypeTextField.isFirstResponder {
+            itemNameTextField.resignFirstResponder()
+        }
+        
+        let alertController = UIAlertController(title: nil, message: "Please wait\n\n", preferredStyle: .alert)
+        
+        let spinnerIndicator = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
+        
+        spinnerIndicator.center = CGPoint(x: 135.0, y: 65.5)
+        spinnerIndicator.color = UIColor.black
+        spinnerIndicator.startAnimating()
+        
+        alertController.view.addSubview(spinnerIndicator)
+        self.present(alertController, animated: false, completion: nil)
         
         let itemName = itemNameTextField.text
         let courseType = courseTypeTextField.text
         
         ConnectionManager.shared.getItems(itemName: itemName, courseType: courseType) { (response, error, items) in
+            
+            alertController.dismiss(animated: true, completion: nil);
+            
             if error != nil {
                 showAlert(inViewController: self, title: error!.domain , message: error!.localizedDescription, buttonCancelText: "OK", buttonOKText: nil, actionOK: nil, actionCancel: nil)
                 return

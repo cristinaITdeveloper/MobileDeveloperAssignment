@@ -22,19 +22,19 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0vX-sD-0fR">
-                    <rect key="frame" x="16" y="258" width="343" height="30"/>
+                    <rect key="frame" x="16" y="198" width="343" height="30"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" returnKeyType="next"/>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Course type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AM7-UX-PUg">
-                    <rect key="frame" x="16" y="318" width="343" height="30"/>
+                    <rect key="frame" x="16" y="258" width="343" height="30"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" returnKeyType="done"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdr-jP-D89">
-                    <rect key="frame" x="16" y="378" width="343" height="30"/>
+                    <rect key="frame" x="16" y="318" width="343" height="30"/>
                     <color key="backgroundColor" red="0.27058823529999998" green="0.60392156860000001" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <state key="normal" title="Search">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -46,17 +46,15 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="bdr-jP-D89" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="9Gi-yT-drg"/>
-                <constraint firstItem="AM7-UX-PUg" firstAttribute="top" secondItem="0vX-sD-0fR" secondAttribute="bottom" constant="30" id="9ap-Gv-dkT"/>
-                <constraint firstItem="AM7-UX-PUg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="BX0-LZ-g7R"/>
-                <constraint firstItem="bdr-jP-D89" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="59.5" id="CH5-iJ-B5D"/>
-                <constraint firstAttribute="trailing" secondItem="0vX-sD-0fR" secondAttribute="trailing" constant="16" id="J11-rI-jlr"/>
-                <constraint firstItem="0vX-sD-0fR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="LMR-SF-WBa"/>
-                <constraint firstAttribute="trailing" secondItem="bdr-jP-D89" secondAttribute="trailing" constant="16" id="QN5-6J-xm2"/>
-                <constraint firstAttribute="trailing" secondItem="AM7-UX-PUg" secondAttribute="trailing" constant="16" id="TeG-ph-lLw"/>
-                <constraint firstItem="bdr-jP-D89" firstAttribute="top" secondItem="AM7-UX-PUg" secondAttribute="bottom" constant="30" id="X8S-0b-nGo"/>
-                <constraint firstItem="0vX-sD-0fR" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-60.5" id="sgy-7U-XBu"/>
-                <constraint firstItem="AM7-UX-PUg" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="tLz-CO-vmG"/>
+                <constraint firstAttribute="trailing" secondItem="0vX-sD-0fR" secondAttribute="trailing" constant="16" id="8eg-hL-yHZ"/>
+                <constraint firstItem="AM7-UX-PUg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="9IG-cF-05w"/>
+                <constraint firstAttribute="trailing" secondItem="AM7-UX-PUg" secondAttribute="trailing" constant="16" id="CQC-wG-R8Q"/>
+                <constraint firstItem="0vX-sD-0fR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="Cbw-wY-SVS"/>
+                <constraint firstItem="AM7-UX-PUg" firstAttribute="top" secondItem="0vX-sD-0fR" secondAttribute="bottom" constant="30" id="Owi-MH-Tcn"/>
+                <constraint firstItem="bdr-jP-D89" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="V28-Vm-p2b"/>
+                <constraint firstAttribute="trailing" secondItem="bdr-jP-D89" secondAttribute="trailing" constant="16" id="j2d-7B-7vj"/>
+                <constraint firstItem="bdr-jP-D89" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="oVT-HV-sOu"/>
+                <constraint firstItem="bdr-jP-D89" firstAttribute="top" secondItem="AM7-UX-PUg" secondAttribute="bottom" constant="30" id="wFo-Qm-3BP"/>
             </constraints>
             <point key="canvasLocation" x="34.5" y="54.5"/>
         </view>

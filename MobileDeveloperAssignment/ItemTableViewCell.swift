@@ -28,7 +28,7 @@ class ItemTableViewCell: UITableViewCell {
     
     func configureWithItem(_ item : Item){
         itemNameLabel.text = item.itemName
-        typeAndPriceLabel.text = "\(item.itemType!) | \(item.itemPrice!)"
+        typeAndPriceLabel.text = "\(item.courseType!) | \(item.itemPrice!)"
         descriptionLabel.text = item.itemDescription.html2String
         
         if let thumbnailImage = item.itemThumbnail {
@@ -46,14 +46,11 @@ class ItemTableViewCell: UITableViewCell {
     
     
     func downloadImage(url: URL) {
-        print("Download Started")
         ConnectionManager.shared.getImageDataFromUrl(url: url) { (data, response, error)  in
             guard let data = data, error == nil else {
                 self.itemImageView.image = UIImage(named: "placeholder")!
                 return
             }
-            print(response?.suggestedFilename ?? url.lastPathComponent)
-            print("Download Finished")
             DispatchQueue.main.async() { () -> Void in
                 self.itemImageView.image = UIImage(data: data)
             }

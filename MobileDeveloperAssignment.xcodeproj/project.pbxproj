@@ -22,6 +22,8 @@
 		6B8CBEFF1F76A216002E629F /* ItemsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B8CBEFD1F76A216002E629F /* ItemsViewController.xib */; };
 		6B8CBF031F76A2BA002E629F /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8CBF011F76A2BA002E629F /* ItemTableViewCell.swift */; };
 		6B8CBF041F76A2BA002E629F /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B8CBF021F76A2BA002E629F /* ItemTableViewCell.xib */; };
+		6B8CBF071F779C0D002E629F /* SelectFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8CBF051F779C0D002E629F /* SelectFilterViewController.swift */; };
+		6B8CBF081F779C0D002E629F /* SelectFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B8CBF061F779C0D002E629F /* SelectFilterViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		6B8CBEFD1F76A216002E629F /* ItemsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemsViewController.xib; sourceTree = "<group>"; };
 		6B8CBF011F76A2BA002E629F /* ItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		6B8CBF021F76A2BA002E629F /* ItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
+		6B8CBF051F779C0D002E629F /* SelectFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectFilterViewController.swift; sourceTree = "<group>"; };
+		6B8CBF061F779C0D002E629F /* SelectFilterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectFilterViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				6B8CBEEE1F768FC4002E629F /* SearchViewController.xib */,
 				6B8CBEFC1F76A216002E629F /* ItemsViewController.swift */,
 				6B8CBEFD1F76A216002E629F /* ItemsViewController.xib */,
+				6B8CBF051F779C0D002E629F /* SelectFilterViewController.swift */,
+				6B8CBF061F779C0D002E629F /* SelectFilterViewController.xib */,
 			);
 			path = MobileDeveloperAssignment;
 			sourceTree = "<group>";
@@ -228,6 +234,7 @@
 				6B8CBEFF1F76A216002E629F /* ItemsViewController.xib in Resources */,
 				6B8CBED51F768F58002E629F /* Assets.xcassets in Resources */,
 				6B8CBF041F76A2BA002E629F /* ItemTableViewCell.xib in Resources */,
+				6B8CBF081F779C0D002E629F /* SelectFilterViewController.xib in Resources */,
 				6B8CBEF01F768FC4002E629F /* SearchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,6 +261,7 @@
 				6B8CBEF61F769188002E629F /* Globals.swift in Sources */,
 				6B8CBEFE1F76A216002E629F /* ItemsViewController.swift in Sources */,
 				6B8CBEF91F769853002E629F /* Item.swift in Sources */,
+				6B8CBF071F779C0D002E629F /* SelectFilterViewController.swift in Sources */,
 				6B8CBECE1F768F58002E629F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
