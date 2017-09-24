@@ -37,6 +37,12 @@ class Item : NSObject, NSCoding{
     var priceStatus : Int!
     var waiting : Bool!
     
+    init(withName itemName: String, courseType: String, price: String) {
+        self.itemName = itemName
+        self.courseType = courseType
+        self.itemPrice = price        
+    }
+    
   
     init(fromDictionary dictionary: NSDictionary){
         
